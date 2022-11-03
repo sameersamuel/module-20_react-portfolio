@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Nav from "./components/Nav";
+import Page from "./components/Page";
 // components
 
 const App = () => {
@@ -28,7 +29,7 @@ const App = () => {
     </Header>
 
     <main>
-      Inside MAIN TAGS in App.js
+      <Page currentPage={currentPage}></Page>
     </main>
     <Footer/>
   </div>
