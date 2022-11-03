@@ -6,11 +6,11 @@ const Footer = () => {
     const icons = [
         {
             name: "fa-brands fa-github",
-            link: "http://github.com/"
+            link: "http://github.com/sameersamuel/"
         },
         {
             name: "fa-brands fa-linkedin",
-            link: "http://github.com/" 
+            link: "https://www.linkedin.com/in/sameer-bhattacharya-a5a47958/" 
         }
     ]
  
@@ -30,10 +30,8 @@ const Footer = () => {
 
     return (
         <footer style={FooterStyle}>
-            <section>
-                {new Date().getFullYear()}
-            </section>
-            <section>
+            <section style={{display: "grid", gridTemplateColumns: "max-content 1fr 1fr", gridGap: "20px"}}>
+                <span style={{paddingRight: "15px"}}>©{new Date().getFullYear()}</span>
                 {icons.map(icon => {
                     return <a href={icon.link} key={icon.name} target="_blank" rel="noopener noreferrer" style={LinkStyle}> <i className={icon.name}></i></a>
                 })}
