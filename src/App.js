@@ -6,7 +6,7 @@ const App = () => {
   return <div>
      
     <main>
-
+      Hello
     </main>
     <Footer/>
   </div>
