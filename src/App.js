@@ -5,9 +5,26 @@ import Nav from "./components/Nav";
 // components
 
 const App = () => {
+
+  const [pages] = useState([
+    {
+      name: "about"
+    },
+    {
+      name: "portfolio"
+    },
+    {
+      name: "contact"
+    },
+    {
+      name: "resume"
+    }
+  ])
+  const [currentPage, setCurrentPage] = useState(pages[0])
+
   return <div>
     <Header>
-      <Nav/>
+      <Nav pages={pages} setCurrentPage={setCurrentPage} currentPage={currentPage}/>
     </Header>
 
     <main>
